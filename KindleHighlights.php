@@ -51,7 +51,7 @@ class KindleHighlights {
     /**
      * Get the Kindle login page.
      */
-    private function getKindleLoginPage() {
+    public function getKindleLoginPage() {
         $this->ch  = curl_init();
         curl_setopt($this->ch, CURLOPT_URL, $this->amazonLoginUrl);
         curl_setopt($this->ch, CURLOPT_COOKIEJAR, 'cookie.txt');
