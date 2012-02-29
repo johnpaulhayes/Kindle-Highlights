@@ -1,1 +1,8 @@
-Initial Readme text.
+Class to access your Amazon Kindle hightlights which are accessible from http://kindle.amazon.com/ when 
+highlighted via the kindle app on the likes of iPhone, Mac etc...
+
+When a highlighted selection of text has a note associated with it, such as tweet in this case, the class extracts
+the associated highlight, thus making it available for further action such as sharing on a social network.
+
+@todo
+1. Hook in Twitter and Facebook.
