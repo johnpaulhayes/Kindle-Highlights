@@ -3,10 +3,10 @@
 require_once '../configs/kindle_highlights_config.php';
 require_once 'KindleHighlights.php';
 
-$kindle = new KindleHighlights();
+$kindle = new KindleHighlights($email, $password);
+$kindle->buildLoginStructure();
+$kindle->Login();
 
-$kindle->loadLoginPage();
-$kindle->loginToKindle($email, $password);
 //$arBooks = $kindle->getListOfBooks();
 
 

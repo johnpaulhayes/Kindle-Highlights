@@ -2,7 +2,7 @@
 /**
  * Name: John Paul Hayes
  * Email: johnpaul@webdeveloper.cx
- * Date: 15/02/2012
+ * Date: 29/02/2012
  * 
  * Description: 
  * A routine to login to amazon kindle site, 
@@ -19,22 +19,6 @@
 require_once '../configs/kindle_highlights_config.php';
 
 $amazonLoginUrl='https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fkindle.amazon.com%3A443%2Fauthenticate%2Flogin_callback%3Fwctx%3D%252F&openid.pape.max_auth_age=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&pageId=amzn_kindle&openid.assoc_handle=amzn_kindle&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0';
-
-$arBooks = array(
-    "Beginning Objective C Programming - Tutorials for the beginner"=>"B006OGB8ZK",
-    "clean-code-handbook-craftsmanship"=>"B001GSTOAM",
-    "code-complete"=>"B004OR1XGK",
-    "debt-first-000-years" =>"B00513DGIO",
-    "does-it-matter"=>"B0042FZX4W",
-    "drunkards-walk-randomness-rules"=>"B002RI9E0K",
-    "filter-bubble-internet-hiding"=>"B004Y4WMH2",
-    "mythical-man-month-engineering-anniversary"=>"B000OZ0N6M",
-    "pragmatic-programmer-journeyman-master"=>"B000SEGEKI",
-    "objective-c-absolute-beginners-programming"=>"B006G3B3DI",
-    "thinking-fast-and-slow"=>"B005MJFA2W",
-    "new-oxford-american-dictionary"=>"B003ODIZL6"
-);
-
 
 $ch  = curl_init();
 curl_setopt($ch, CURLOPT_URL, $amazonLoginUrl);
