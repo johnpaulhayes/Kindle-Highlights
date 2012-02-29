@@ -6,3 +6,9 @@ the associated highlight, thus making it available for further action such as sh
 
 @todo
 1. Hook in Twitter and Facebook.
+
+Notes:
+This class is highly reliant on amazon not changing their login methods on http://kindle.amazon.com and the associated 
+site structure. So if this fails to work, please feel free to fix or let me know! 
+
+-- Have fun!
