@@ -5,7 +5,8 @@ When a highlighted selection of text has a note associated with it, such as twee
 the associated highlight, thus making it available for further action such as sharing on a social network.
 
 @todo
-1. Hook in Twitter and Facebook.
+1. Save book related details to a database.
+2. Hook in Twitter and Facebook.
 
 Notes:
 This class is highly reliant on amazon not changing their login methods on http://kindle.amazon.com and the associated 
