@@ -1,16 +1,18 @@
 <?php
 /**
- * Pseudo Code.
- * Author: John Paul Hayes  - t: @johnpaulhayes
+ * Author:  John Paul Hayes  - t: @johnpaulhayes
+ * Date:    29/02/2012
  * 
- * Description
+ * Disclaimer:
+ * Please read the Amazon Kindle Terms and conditions before integrating this into your app.
+ * 
+ * Description:
  * I using the Amazon Kindle apps. I have them installed on my iPhone and all
  * my other devices and naturally, I highlight portions of text. Sometimes I like to
  * tweet a quote or two. However, the Kindle app share function only shares a link to a 
  * highlighted text. I don't like this so hence this class.
  * 
  * This class logs you into kindle.amazon.com obtains your list of books and their corresponding URLs
- * 
  */
 
 class KindleHighlights {
