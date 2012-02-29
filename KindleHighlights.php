@@ -22,7 +22,7 @@ class KindleHighlights {
     public $afterLoginPage = '';
     public $bookTitleXpathQuery = '//td[@class="titleAndAuthor"]//a';
     public $highlightXpathQuery = '//div[@class="text"]//span[@class="highlight"]';
-    public $noteContentXpathQuery = '//div[@class="text"]//span[@class=highlight]//span[@class="noteContent]';
+    public $noteContentXpathQuery = '//div[@class="text"]//p[@class="editNote "]//span[@class="noteContent"]';
     public $highlights;
     public $notes;
     public $error = '';
@@ -33,6 +33,7 @@ class KindleHighlights {
     public $hiddenFields;
     public $postFields;
     public $post;
+    public $arHighlights;
     
     protected $username;
     protected $password;
@@ -206,8 +207,8 @@ class KindleHighlights {
     public function getHighlightAction(){
         foreach($this->highlights as $key=>$value){
             $myNote = trim($this->notes->item($key)->nodeValue);
-            if($myNote == 'tweet') {
-                $this->arHighlights[] = $highlights->item($key-2)->nodeValue; // not sure yet why the -2 works
+            if(strtolower($myNote) == 'tweet') {
+                $this->arHighlights[] = $this->highlights->item($key-2)->nodeValue;
             }
         }
     }
