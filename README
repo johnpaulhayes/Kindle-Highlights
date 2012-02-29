@@ -6,7 +6,7 @@ the associated highlight, thus making it available for further action such as sh
 
 @todo
 1. Save book related details to a database.
-2. Hook in Twitter and Facebook.
+2. Hook in Twitter and Facebook for proper sharing.
 
 Notes:
 This class is highly reliant on amazon not changing their login methods on http://kindle.amazon.com and the associated 
